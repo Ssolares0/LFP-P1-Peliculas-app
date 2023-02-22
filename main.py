@@ -11,6 +11,7 @@ peliculas =[]
 actorepeli=[]
 
 iteracion = 0
+it=0
 
 
 
