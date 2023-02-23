@@ -50,7 +50,7 @@ def cargarArchivos():
     sg.theme('LightTeal') 
 
     layout = [[sg.Text('Filename')],
-              [sg.Input(), sg.FileBrowse(file_types=(("Data Files", "*.lfp"),))],
+              [sg.Input(), sg.FileBrowse(file_types=(( "*.lfp"),))],
               [sg.OK("ok")]]
 
     window = sg.Window('Cargar Archivo LFP', layout,)
@@ -288,7 +288,7 @@ def filtradoPeliculas():
                     
         
             else:
-                print('introduce un numero entre el 1 y el 3')     
+                print('introduce un numero entre el 1 y el 4')     
     
          
             
