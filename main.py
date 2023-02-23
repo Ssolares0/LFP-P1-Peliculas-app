@@ -50,10 +50,10 @@ def cargarArchivos():
     sg.theme('LightTeal') 
 
     layout = [[sg.Text('Filename')],
-              [sg.Input(), sg.FileBrowse(file_types=(("Data Files", "*.csv"),("Data Files", "*.lfp"),))],
+              [sg.Input(), sg.FileBrowse(file_types=(("Data Files", "*.lfp"),))],
               [sg.OK("ok")]]
 
-    window = sg.Window('Cargar Archivo CSV', layout,)
+    window = sg.Window('Cargar Archivo LFP', layout,)
 
     while True:
 
