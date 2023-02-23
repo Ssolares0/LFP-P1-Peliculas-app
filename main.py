@@ -5,6 +5,7 @@ from tkinter import N
 import os
 import pandas as pd
 import PySimpleGUI as sg
+import io
 
 from peliculas import Peliculas
 peliculas =[]
@@ -90,6 +91,8 @@ def addPeliculas():
         info =objeto.read()
 
         infoxlinea= info.splitlines()
+
+      
 
         for x in infoxlinea:
             
