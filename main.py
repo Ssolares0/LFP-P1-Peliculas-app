@@ -125,6 +125,7 @@ def addPeliculas():
             
             #menu De gestion de peliculas
             print('----------------------------------------------')
+            print('------------GESTION DE PELICULAS--------------')
             print("--1. Mostrar peliculas--")
             print("--2. Mostrar Actores--")  
             print("--3. Regresar--")  
@@ -258,15 +259,45 @@ def grafico():
     os.system('dot -Tpdf grafico.dot -o grafico.pdf')
            
              
+def filtradoPeliculas():
+    exit =False
+    while exit== False:
+            
+            #menu De FILTRACION DE PELICULAS
+            print('----------------------------------------------')
+            print('----------FILTRACION DE PELICULAS-------------')
+            print("--1. Filtrado Por Actor--")
+            print("--2. Filtrado Por año--")  
+            print("--3. Filtrado Por Genero--")  
+            print("--4. Regresar--")
+            print('----------------------------------------------')
+            
+            opcion2 = int(input("Ingrese una opcion: "))
+            
+            if opcion2 == 1:
+                pass
+            elif opcion2 == 2:
+                pass
+            elif opcion2 == 3:
+                pass
+
+
+                    
+            elif opcion2 == 4:
+                    exit= True
+                    
         
+            else:
+                print('introduce un numero entre el 1 y el 3')     
+    
+         
             
 def MenuPrincipal():
     
 
     #menu en consola
-
+    print('-------------BIENVENIDO-----------')
     print("--1. Cargar Archivo de Entrada--")
-    
     print("--2. Gestionar Peliculas--")
     print("--3. Filtrado de Peliculas--")
     print("--4. Graficar Peliculas--")
@@ -283,7 +314,7 @@ while  True:
             addPeliculas()
                 
         elif opcion == 3:
-                pass
+                filtradoPeliculas()
 
         elif opcion == 4:
                 grafico()

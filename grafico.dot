@@ -1,0 +1,77 @@
+
+    digraph main {
+        graph [pad="0.5", nodesep="0.5", ranksep="2"];
+        node [shape=plain]
+        rankdir=LR;
+
+    
+nodo1 [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="#0091ea" port="p1" colspan="2">The Avengers </td></tr>
+        <tr><td>  2012  </td><td>  Ficcion </td></tr>
+        </table>>];
+
+
+nodo2 [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Spiderman</td></tr>
+        <tr><td> 2002 </td><td> Accion </td></tr>
+        </table>>];
+
+
+nodo3 [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="#0091ea" port="p1" colspan="2">The Amazing Spiderman</td></tr>
+        <tr><td> 2012 </td><td> Accion </td></tr>
+        </table>>];
+
+
+nodo4 [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="#0091ea" port="p1" colspan="2">The Amazing Spiderman 2</td></tr>
+        <tr><td> 2014 </td><td> Accion </td></tr>
+        </table>>];
+
+
+nodo5 [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Spiderman Homecoming</td></tr>
+        <tr><td> 2017 </td><td> Accion </td></tr>
+        </table>>];
+
+
+nodo6 [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Avengers Infinity War</td></tr>
+        <tr><td> 2018 </td><td> Acion </td></tr>
+        </table>>];
+
+node [shape=box, style=filled, fillcolor="#00c853"]	" Robert Downey Jr"
+	"Chris Evans"
+	"Chris Hemsworth "
+	"Tobey Maguire"
+	"Kirsten Dunst"
+	"Willem Dafoe"
+	"Andrew Garfield"
+	"Emma Stone"
+	" Andrew Garfield"
+	"Emma Stone"
+	"Tom Holland"
+	" Zendaya"
+	"Robert Downey Jr"
+	"Tom Holland"
+	nodo1:p1 -> " Robert Downey Jr";
+	nodo1:p1 -> "Chris Evans";
+	nodo1:p1 -> "Chris Hemsworth ";
+	nodo2:p1 -> "Tobey Maguire";
+	nodo2:p1 -> "Kirsten Dunst";
+	nodo2:p1 -> "Willem Dafoe";
+	nodo3:p1 -> "Andrew Garfield";
+	nodo3:p1 -> "Emma Stone";
+	nodo4:p1 -> " Andrew Garfield";
+	nodo4:p1 -> "Emma Stone";
+	nodo5:p1 -> "Tom Holland";
+	nodo5:p1 -> " Zendaya";
+	nodo6:p1 -> "Robert Downey Jr";
+	nodo6:p1 -> "Tom Holland";
+}
