@@ -107,7 +107,9 @@ def addPeliculas():
             
             peliagregada=Peliculas(name,actor,year,gender)
             actorAgg = actor
+            
             for i in range(len(peliculas)):
+                
                 if peliculas[i].nombre == name:
                     print("Ya existe una pelicula con ese nombre")
                     pelirepetida=True
@@ -121,7 +123,7 @@ def addPeliculas():
                     actorepeli.append(dent)
                 
                 print("Pelicula agregada con exito")
-
+            pelirepetida=False
         
 
         while exit== False:
@@ -163,14 +165,7 @@ def addPeliculas():
                 print('introduce un numero entre el 1 y el 3')     
     except:
         print("------------No se ha cargado ningun archivo------------")
-        print('presione 1 para regresar al menu principal o 2 para salir')
-
-        opcion3 = int(input("Ingrese una opcion: ")) 
-        if opcion3 == 1:
-
-            pass
-        elif opcion3 == 2:
-            print("Gracias por usar el programa")
+        pass
 
 def grafico():
     global peli
@@ -278,11 +273,70 @@ def filtradoPeliculas():
             opcion2 = int(input("Ingrese una opcion: "))
             
             if opcion2 == 1:
-                pass
+                encontrado = False
+                encontrado2 = False
+                count=0
+                print('----------hola estas en el apartado de filtrado por actor----------')
+                opc = str(input("Ingrese el nombre del actor: "))
+                
+                for i in range(len(peliculas)):
+                    
+                    count= i+1
+                    
+                    if peliculas[i].actores== opc:
+                    
+                        encontrado = True
+                        print('actor encontrado')
+                    else:
+                        encontrado = False
+                        print('actor no encontrado')    
+
+                if encontrado == True:
+                    print('Pelicula: ',peliculas[count-1].nombre)
+                        
             elif opcion2 == 2:
-                pass
+                try:
+                    print('----------hola estas en el apartado de filtrado por año----------')
+                    count2 = 0
+                    opc2 = int(input("Ingrese el año: "))
+                    for i in range(len(peliculas)):
+                        
+                        
+                        
+                        if int(peliculas[i].año)== int(opc2):
+                            
+                            print('Año: ',peliculas[i].año,'Pelicula: ',peliculas[i].nombre, 'Genero: ',peliculas[i].genero) 
+                            encontrado = True
+                            
+                            
+                        else:
+                            count2= i+1
+                            
+                except:
+                    print('Solo se pueden ingresar numeros')
+                
+
             elif opcion2 == 3:
-                pass
+                try:
+                    print('----------hola estas en el apartado de filtrado por Genero----------')
+                    count3 = 0
+                    opc3 = str(input("Ingrese el genero: "))
+                    for i in range(len(peliculas)):
+                        
+                        cadenaGenero = peliculas[i].genero
+                        cadenaGenero2 = cadenaGenero.replace("  ","")
+                        
+                        if str(peliculas[i].genero.replace(' ','')) == str(opc3):
+                            
+                            print('Pelicula: ',peliculas[i].nombre, 'Genero: ',peliculas[i].genero) 
+                            encontrado2 = True
+                            
+                            
+                        else:
+                            count3= i+1
+                            
+                except:
+                    print('Solo se pueden ingresar letras')
 
 
                     

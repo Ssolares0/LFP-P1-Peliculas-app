@@ -60,6 +60,13 @@ nodo8 [label=<
         <tr><td>  2013 </td><td> Accion </td></tr>
         </table>>];
 
+
+nodo9 [label=<
+        <table border="0" cellborder="1" cellspacing="0">
+        <tr><td bgcolor="#0091ea" port="p1" colspan="2">Capitán América: El Soldado de Invierno</td></tr>
+        <tr><td> 2014 </td><td> Accion </td></tr>
+        </table>>];
+
 node [shape=box, style=filled, fillcolor="#00c853"]	"Chris Evans"
 	"Tommy Lee Jones"
 	"Hayley Atwell"
@@ -99,6 +106,12 @@ node [shape=box, style=filled, fillcolor="#00c853"]	"Chris Evans"
 	" Robert Downey Jr."
 	"Jon Favreau"
 	"Gwyneth Paltrow"
+	"Stan Lee"
+	"Chris Evans"
+	"Scarlett Johansson"
+	"Sebastian Stan"
+	"Anthony Mackie"
+	"Samuel L. Jackson"
 	"Stan Lee"
 	nodo1:p1 -> "Chris Evans";
 	nodo1:p1 -> "Tommy Lee Jones";
@@ -140,4 +153,10 @@ node [shape=box, style=filled, fillcolor="#00c853"]	"Chris Evans"
 	nodo8:p1 -> "Jon Favreau";
 	nodo8:p1 -> "Gwyneth Paltrow";
 	nodo8:p1 -> "Stan Lee";
+	nodo9:p1 -> "Chris Evans";
+	nodo9:p1 -> "Scarlett Johansson";
+	nodo9:p1 -> "Sebastian Stan";
+	nodo9:p1 -> "Anthony Mackie";
+	nodo9:p1 -> "Samuel L. Jackson";
+	nodo9:p1 -> "Stan Lee";
 }
