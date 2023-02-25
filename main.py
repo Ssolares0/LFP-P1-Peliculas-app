@@ -181,7 +181,9 @@ def grafico():
 
 
     
-    peli={}
+    peli={
+        
+    }
     
     
     
